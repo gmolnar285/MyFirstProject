@@ -26,5 +26,21 @@ namespace MVCApp1.Controllers
 
             return View();
         }
+
+        public ActionResult ToDoList()
+        {
+            var lista = new List<String>();
+            {
+                lista.Add("Só");
+                lista.Add("Cukor");
+                lista.Add("Spagetti");
+                lista.Add("Marhahús");
+                lista.Add("Paradicsom");
+            }
+
+            ViewBag.lista = lista;
+
+            return View();
+        }
     }
 }
